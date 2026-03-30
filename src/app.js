@@ -13,7 +13,10 @@ app.use(express.json())
 
 app.use(
     cors({
-        origin: "http://localhost:5173",
+        origin: [
+            "https://thankful-ground-04f584e0f.4.azurestaticapps.net",
+            "http://localhost:5173"
+        ],
         credentials: true,
     })
 )
