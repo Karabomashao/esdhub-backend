@@ -10,11 +10,11 @@ import ConnectDB from "./config/database.js";
 //start sever here
 const startServer = async () => {
     try {
-        await ConnectDB()
-        app.on("error", (error) => {
-            console.log("ERROR", error)
-            throw error
-        })
+        // await ConnectDB()
+        // app.on("error", (error) => {
+        //     console.log("ERROR", error)
+        //     throw error
+        // })
 
         app.listen(process.env.PORT || 5137, () => {
             console.log(`Server is running on ${process.env.PORT}`)
